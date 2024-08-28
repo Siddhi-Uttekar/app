@@ -81,10 +81,19 @@ function App() {
               </SwiperSlide>
               <SwiperSlide>
                 <img
-                  src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-landing-hero-2.1d4f0b54.webp&w=1080&q=75"
+                  src="./src/assets/mm2.png"
                   alt="Foreground Image"
                   className="w-full h-auto rounded-lg"
                 />
+
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src="./src/assets/mm3.jpg"
+                  alt="Foreground Image"
+                  className="w-full h-auto rounded-lg"
+                />
+
               </SwiperSlide>
             </Swiper>
           </div>
@@ -98,31 +107,24 @@ function App() {
             For people <span className="font-bold">making Impact</span>
           </h2>
           <Tabs aria-label="Options">
-            <Tab key="photos" title="Photos">
-              <Card className="bg-white shadow-lg rounded-lg max-w-md mx-auto my-4">
+          <Tab key="Tech" title={<span className="font-bold">Tech</span>}>
+              <Card className="bg-white shadow-lg rounded-lg max-w-md mx-auto my-4 text-lg">
                 <CardBody>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                Unlock your potential in the tech industry with guidance from experienced mentors.
                 </CardBody>
               </Card>
             </Tab>
-            <Tab key="music" title="Music">
-              <Card className="bg-white shadow-lg rounded-lg max-w-md mx-auto my-4">
+            <Tab key="Career" title={<span className="font-bold">Career</span>}>
+              <Card className="bg-white shadow-lg rounded-lg max-w-md mx-auto my-4 text-lg ">
                 <CardBody>
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
+                Find your career path with the help of seasoned professionals who have been where you are.
                 </CardBody>
               </Card>
             </Tab>
-            <Tab key="videos" title="Videos">
-              <Card className="bg-white shadow-lg rounded-lg max-w-md mx-auto my-4">
+            <Tab key="Study Abroad" title={<span className="font-bold">Study Abroad</span>}>
+              <Card className="bg-white shadow-lg rounded-lg max-w-md mx-auto my-4 text-lg">
                 <CardBody>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.
+                Connect with mentors who have studied abroad and learn how to navigate the challenges and opportunities.
                 </CardBody>
               </Card>
             </Tab>
@@ -163,13 +165,15 @@ function App() {
         <Button
           type="primary"
           shape="circle"
-          icon={<MessageOutlined />}
+          icon={<MessageOutlined style={{ fontSize: '44px' }}/>}
           size="large"
           style={{
             position: "fixed",
             bottom: 30,
-            right: 30,
+            right: 40,
             zIndex: 1000,
+            width: '55px',
+            height: '55px',
           }}
           onClick={showModal}
         />
