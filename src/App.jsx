@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import CustomNavbar from "./components/Navbar";
 import { FaArrowRight, FaPlay } from "react-icons/fa";
-import Coffee from "./assets/coffee.gif";
+import Coffee from "./assets/mm.jpg";
 import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
 import FAQSection from "./components/QnA";
 import CustomFooter from "./components/Footer";
@@ -147,7 +147,7 @@ function App() {
               </button>
             </div>
           </div>
-          <div className="mt-8 flex items-center justify-center">
+          <div className="mt-8 w-3/6 flex items-center justify-center">
             <img
               src={Coffee}
               alt="Coffee"

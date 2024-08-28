@@ -35,7 +35,7 @@ export default function CustomNavbar() {
   return (
     <>
       <div className="w-full h-1.5 bg-gradient-to-r from-[#ff7e5f] to-[#feb47b]" />
-      <Navbar isBordered shouldHideOnScroll className="bg-[#F8F7F2] text-xl">
+      <Navbar isBordered shouldHideOnScroll className="bg-[#F8F7F2] text-xl flex  ">
         <NavbarBrand>
           <p className="font-extrabold text-inherit text-2xl">MentorConnect</p>
         </NavbarBrand>
@@ -49,6 +49,7 @@ export default function CustomNavbar() {
                   endContent={icons.chevron}
                   radius="sm"
                   variant="light"
+                  style={{ fontWeight: 'bold' , fontSize: '19px' }}
                 >
                   Features
                 </Button>
@@ -99,19 +100,19 @@ export default function CustomNavbar() {
             </DropdownMenu>
           </Dropdown>
           <NavbarItem isActive>
-            <Link href="#" aria-current="page">
+            <Link href="#" aria-current="page" style={{ fontWeight: 'bold', fontSize:'19px' }}>
               Mentors
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
+            <Link color="foreground" href="#" style={{ fontWeight: 'bold', fontSize: '19px' }}>
               Mentees
             </Link>
           </NavbarItem>
         </NavbarContent>
         <NavbarContent justify="end">
-          <NavbarItem className="hidden lg:flex bg-transparent rounded-lg border border-solid text-black py-3 px-5">
-            <Link href="#">Login</Link>
+          <NavbarItem className="hidden lg:flex bg-transparent rounded-lg border border-solid text-black py-3 px-5 ml-10">
+            <Link href="#" style={{ fontWeight: 'bold', fontSize:'17px' }}>Login</Link>
           </NavbarItem>
           <NavbarItem>
             <Button
@@ -119,7 +120,7 @@ export default function CustomNavbar() {
               color="primary"
               href="#"
               variant="flat"
-              className="bg-black rounded-lg text-white font-bold p-6 text-md"
+              className="bg-black rounded-lg text-white font-bold p-6  text-md"
             >
               Sign Up
             </Button>
