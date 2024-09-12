@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/b29dacc0-8faa-4ac8-9282-5797e0fb0935)
 
 # React + Vite
 
